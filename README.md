@@ -201,7 +201,3 @@ class Program
     }
 }
 ```
-
-#### Conclusion
-
-Ce glossaire et les exemples de code fournissent une base solide pour comprendre et utiliser les concepts de base de la programmation en C#. Les étudiants peuvent se référer à ce glossaire pour préparer leurs évaluations et pour mieux comprendre comment appliquer ces concepts dans différents contextes.
