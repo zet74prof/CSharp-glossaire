@@ -6,10 +6,10 @@ Une bibliothèque souhaite numériser son système de gestion pour gérer les em
 
 ### **Exercice 1 : Déclaration de variables et types de données** (5 points)  
 1. Déclarez les variables nécessaires pour stocker :  
-   - Le nombre total de livres disponibles (`int`).  
-   - Le titre du livre emprunté (`string`).  
-   - Le nom de l'emprunteur (`string`).  
-   - La durée de l'emprunt en jours (`int`).  
+   - Le nombre total de livres disponibles.  
+   - Le titre du livre emprunté.  
+   - Le nom de l'emprunteur.  
+   - La durée de l'emprunt en jours.  
 
 2. Assignez des valeurs initiales aux variables en supposant :  
    - 100 livres disponibles.  
