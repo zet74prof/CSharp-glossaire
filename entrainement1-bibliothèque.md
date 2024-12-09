@@ -1,51 +1,95 @@
-### Évaluation d'Entraînement 1 : Application de Gestion de Bibliothèque
+### **Évaluation d'entraînement : Application de gestion d'une bibliothèque**  
+#### **Contexte :**  
+Une bibliothèque souhaite numériser son système de gestion pour gérer les emprunts de livres. Vous devez écrire un programme simple en C# qui facilite cette gestion.
 
-#### Contexte : Application de Gestion de Bibliothèque
+---
 
-Vous êtes chargé de développer une application simple de gestion de bibliothèque. L'application doit permettre aux utilisateurs de consulter les livres disponibles, d'emprunter des livres, et de gérer les retours. Vous devez utiliser les concepts de base de la programmation en C# que vous avez appris : variables, types de données de base, tableaux, listes, instructions conditionnelles et itératives, ainsi que le principe des fonctions.
+### **Exercice 1 : Déclaration de variables et types de données** (5 points)  
+1. Déclarez les variables nécessaires pour stocker :  
+   - Le nombre total de livres disponibles (`int`).  
+   - Le titre du livre emprunté (`string`).  
+   - Le nom de l'emprunteur (`string`).  
+   - La durée de l'emprunt en jours (`int`).  
 
-#### Instructions
+2. Assignez des valeurs initiales aux variables en supposant :  
+   - 100 livres disponibles.  
+   - Pas encore de titre emprunté.  
 
-1. **Déclaration de Variables et Types de Données de Base**
-   - Déclarez et initialisez les variables nécessaires pour stocker les informations suivantes :
-     - Nombre total de livres disponibles
-     - Nombre de livres empruntés
-     - Tableau listant les noms des utilisateurs
-     - Liste des dates d'emprunt
-     - Durée de l'emprunt en jours
+---
 
-2. **Utilisation de Tableaux**
-   - Créez un tableau pour stocker les noms des utilisateurs qui ont emprunté des livres.
-   - Ajoutez des noms d'utilisateurs à ce tableau lorsqu'un emprunt est confirmé.
+### **Exercice 2 : Conditions et prise de décision** (10 points)  
+Écrivez un programme qui :  
+1. Demande à l'utilisateur le titre du livre qu'il souhaite emprunter.  
+2. Vérifie si le livre est disponible (en supposant qu'il y a 100 copies disponibles pour tous les livres).  
+3. Affiche :  
+   - Un message de confirmation si le livre est disponible.  
+   - Un message d’erreur si aucun exemplaire n’est disponible (livres restants = 0).  
 
-3. **Utilisation de Listes**
-   - Créez une liste pour stocker les dates d'emprunt.
-   - Ajoutez les dates d'emprunt à cette liste lorsqu'un emprunt est confirmé.
+Exemple :  
+```
+Quel livre souhaitez-vous emprunter ? "Le Petit Prince"
+Le livre "Le Petit Prince" est disponible. Votre emprunt est confirmé.
+```
 
-4. **Instructions Conditionnelles (if, else if, else)**
-   - Écrivez un programme qui demande à l'utilisateur de saisir le nombre de livres qu'il souhaite emprunter.
-   - Vérifiez si le nombre de livres demandés est disponible.
-   - Si les livres sont disponibles, affichez un message de confirmation d'emprunt.
-   - Sinon, affichez un message indiquant que le nombre de livres demandés n'est pas disponible.
+---
 
-5. **Boucle while**
-   - Utilisez une boucle `while` pour permettre à l'utilisateur de faire plusieurs emprunts jusqu'à ce qu'il décide d'arrêter.
-   - À chaque itération, demandez à l'utilisateur s'il souhaite faire un nouvel emprunt (oui/non).
+### **Exercice 3 : Boucles et validation des entrées** (15 points)  
+1. Modifiez le programme précédent pour permettre à l'utilisateur de réessayer si le titre saisi est vide.  
+   - Utilisez une boucle `do...while` pour répéter la demande tant que l'utilisateur n'entre pas un titre valide (non vide).  
 
-6. **Boucle do...while**
-   - Utilisez une boucle `do...while` pour afficher les emprunts en cours.
-   - À chaque itération, affichez les détails de l'emprunt (nom de l'utilisateur, date d'emprunt, nombre de livres empruntés, durée de l'emprunt).
-   - Demandez à l'utilisateur s'il souhaite continuer à afficher les emprunts (oui/non).
+---
 
-7. **Boucle for**
-   - Utilisez une boucle `for` pour afficher un tableau des disponibilités des livres pour les prochains 7 jours.
-   - Pour chaque jour, affichez le nombre de livres disponibles.
+### **Exercice 4 : Utilisation des tableaux et des listes** (20 points)  
+1. Déclarez un tableau contenant les noms de 5 livres populaires disponibles dans la bibliothèque.  
+2. Affichez ces titres à l'aide d'une boucle `foreach`.  
+3. Ajoutez une fonctionnalité permettant de suivre les titres empruntés dans une liste dynamique.  
+4. Affichez la liste mise à jour après chaque emprunt.
 
-8. **Boucle foreach**
-   - Utilisez une boucle `foreach` pour parcourir la liste des dates d'emprunt et afficher chaque date d'emprunt.
+---
 
-9. **Fonctions**
-   - Créez des fonctions pour structurer votre code :
-     - `AfficherDisponibilites()` : Affiche les disponibilités des livres pour les prochains 7 jours.
-     - `AjouterEmprunt(string nom, int nombreLivres)` : Ajoute un emprunt pour un utilisateur.
-     - `AfficherEmprunts()` : Affiche tous les emprunts en cours.
+### **Exercice 5 : Création de fonctions** (20 points)  
+1. Implémentez une fonction `CalculerDateRetour` qui prend en paramètre :  
+   - La durée de l'emprunt en jours.  
+   - Et retourne la date de retour prévue en ajoutant cette durée à la date actuelle.  
+
+2. Appelez cette fonction après chaque emprunt pour afficher la date de retour prévue.
+
+---
+
+### **Exercice 6 : Mise en application complète** (30 points)  
+Créez un programme complet en combinant les exercices précédents :  
+1. Demandez à l'utilisateur de saisir :  
+   - Son nom.  
+   - Le titre du livre qu'il souhaite emprunter.  
+   - La durée de l'emprunt (en jours).  
+
+2. Validez les données saisies avec des boucles et conditions appropriées.  
+3. Réduisez le nombre total de livres disponibles après un emprunt.  
+4. Ajoutez le titre emprunté à une liste de livres empruntés.  
+5. Affichez un résumé à la fin :  
+   - Nom de l'emprunteur.  
+   - Titre du livre emprunté.  
+   - Durée de l'emprunt.  
+   - Date de retour prévue.  
+   - Nombre total de livres restants.
+
+Exemple de sortie :  
+```
+Nom de l'emprunteur : Marie  
+Livre emprunté : Le Petit Prince  
+Durée de l'emprunt : 14 jours  
+Date de retour prévue : 2024-12-23  
+Livres restants : 99
+```
+
+---
+
+### **Barème total : 100 points**  
+- Variables : 5 points  
+- Conditions : 10 points  
+- Boucles : 15 points  
+- Tableaux et listes : 20 points  
+- Fonctions : 20 points  
+- Mise en application complète : 30 points  
+
+---
