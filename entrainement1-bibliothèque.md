@@ -1,4 +1,4 @@
-### **Évaluation d'entraînement : Application de gestion d'une bibliothèque**  
+### **Entraînement : Application de gestion d'une bibliothèque**  
 #### **Contexte :**  
 Une bibliothèque souhaite numériser son système de gestion pour gérer les emprunts de livres. Vous devez écrire un programme simple en C# qui facilite cette gestion.
 
@@ -43,7 +43,7 @@ Le livre "Le Petit Prince" est disponible. Votre emprunt est confirmé.
 ### **Exercice 4 : Utilisation des tableaux et des listes** (20 points)  
 1. Déclarez un tableau contenant les noms de 5 livres populaires disponibles dans la bibliothèque.  
 2. Affichez ces titres à l'aide d'une boucle `foreach`.  
-3. Ajoutez une fonctionnalité permettant de suivre les titres empruntés dans une liste dynamique.  
+3. Ajoutez une fonctionnalité permettant de suivre les titres empruntés en déclarant une liste dynamique et en ajoutant le titre d'un livre saisi par l'utilisateur à cette liste.  
 4. Affichez la liste mise à jour après chaque emprunt.
 
 ---
@@ -53,7 +53,7 @@ Le livre "Le Petit Prince" est disponible. Votre emprunt est confirmé.
    - La durée de l'emprunt en jours.  
    - Et retourne la date de retour prévue en ajoutant cette durée à la date actuelle.  
 
-2. Appelez cette fonction après chaque emprunt pour afficher la date de retour prévue.
+2. Appelez cette fonction pour afficher la date de retour prévue pour une durée d'emprunt de 10 jours.
 
 ---
 
