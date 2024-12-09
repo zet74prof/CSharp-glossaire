@@ -35,7 +35,8 @@ Le livre "Le Petit Prince" est disponible. Votre emprunt est confirmé.
 
 ### **Exercice 3 : Boucles et validation des entrées** (15 points)  
 1. Modifiez le programme précédent pour permettre à l'utilisateur de réessayer si le titre saisi est vide.  
-   - Utilisez une boucle `do...while` pour répéter la demande tant que l'utilisateur n'entre pas un titre valide (non vide).  
+   - Utilisez une boucle `do...while` pour répéter la demande tant que l'utilisateur n'entre pas un titre valide (non vide).
+   - Vous pouvez utiliser la méthode `string.IsNullOrWhiteSpace(uneChaine)` qui retourne vrai si la variable passée en paramètre ne contient aucun caractère ou que des espaces, et faux sinon.
 
 ---
 
