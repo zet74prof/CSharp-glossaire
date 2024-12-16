@@ -1,4 +1,4 @@
-### **Glossaire des Éléments de base du langage C#**
+### **Glossaire des Éléments de Code**
 
 #### **1. Variables et Types de Données**
 - **Définition :** Une variable est une unité de stockage qui permet de conserver des données en mémoire.
@@ -60,7 +60,7 @@
         compteur++;
     } while (compteur < 5);
     ```
-  - **`foreach`** : Pour parcourir les éléments d'une collection.
+  - **`foreach`** : Pour parcourir les éléments d'une collection (tableau ou liste).
     ```csharp
     string[] noms = { "Alice", "Bob", "Charlie" };
     foreach (string nom in noms)
@@ -131,6 +131,40 @@
   ```csharp
   DateTime dateRetour = DateTime.Now.AddDays(7);
   Console.WriteLine($"Date de retour prévue : {dateRetour}");
+  ```
+
+---
+
+#### **8. Validation des Entrées avec `int.TryParse`**
+- **Définition :** `int.TryParse` est une méthode qui tente de convertir une chaîne de caractères en un entier. Elle retourne `true` si la conversion réussit, et `false` sinon, sans générer d'exception. Cela permet de valider les entrées utilisateur.
+
+- **Syntaxe :**
+  ```csharp
+  string entreeUtilisateur = "123";
+  int valeur;
+
+  if (int.TryParse(entreeUtilisateur, out valeur))
+  {
+      Console.WriteLine($"Conversion réussie : {valeur}");
+  }
+  else
+  {
+      Console.WriteLine("Erreur : la saisie n'est pas un entier valide.");
+  }
+  ```
+
+- **Utilisation courante :**
+  `int.TryParse` est souvent utilisé dans une boucle pour redemander une saisie valide à l'utilisateur :
+  ```csharp
+  int nombre;
+  Console.WriteLine("Veuillez entrer un nombre entier :");
+
+  while (!int.TryParse(Console.ReadLine(), out nombre) || nombre <= 0)
+  {
+      Console.WriteLine("Erreur : veuillez entrer un entier positif.");
+  }
+
+  Console.WriteLine($"Vous avez saisi : {nombre}");
   ```
 
 ---
