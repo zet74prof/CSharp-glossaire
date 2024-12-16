@@ -4,17 +4,17 @@
 
 #### **Exercice 1 : Déclaration de variables et types de données** (5 points)  
 1. Déclarez les variables nécessaires pour stocker :  
-   - Le nombre total de médecins disponibles (`int`).  
-   - Le nombre total de salles de consultation disponibles (`int`).  
-   - Le nom du patient (`string`).  
-   - Le type de consultation souhaitée (généraliste ou spécialiste) (`bool`, où `true` = spécialiste et `false` = généraliste).  
-   - La durée estimée de la consultation en minutes (`int`).  
+   - Le nombre total de médecins disponibles.  
+   - Le nombre total de salles de consultation disponibles.  
+   - Le nom du patient.  
+   - Le type de consultation souhaitée (généraliste ou spécialiste) (où `Vrai` = spécialiste et `Faux` = généraliste).  
+   - La durée estimée de la consultation en minutes.  
 
 2. Assignez des valeurs initiales aux variables en supposant :  
    - 5 médecins généralistes disponibles.  
    - 3 médecins spécialistes disponibles.  
    - 8 salles de consultation disponibles.  
-   - Le type de consultation par défaut est généraliste.  
+   - Le type de consultation par défaut est généraliste (ie `Faux`).  
 
 ---
 
