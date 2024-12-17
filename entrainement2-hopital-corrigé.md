@@ -68,6 +68,8 @@ else
 
 ```csharp
 int choix;
+bool manqueRessources = false;
+
 do
 {
     Console.WriteLine("Quel type de consultation souhaitez-vous ? Saisissez 1 pour généraliste ou 2 pour spécialiste.");
@@ -82,7 +84,6 @@ do
         medecinsGeneralistes--;
         sallesDisponibles--;
         Console.WriteLine("Votre rendez-vous chez un généraliste est confirmé.");
-        break;
     }
     else if (choix == 2 && medecinsSpecialistes > 0 && sallesDisponibles > 0)
     {
@@ -90,13 +91,13 @@ do
         medecinsSpecialistes--;
         sallesDisponibles--;
         Console.WriteLine("Votre rendez-vous chez un spécialiste est confirmé.");
-        break;
     }
     else
     {
         Console.WriteLine("Désolé, aucune ressource disponible pour ce type de consultation.");
+        manqueRessources = true;
     }
-} while (true);
+} while (manqueRessources);
 ```
 
 ---
