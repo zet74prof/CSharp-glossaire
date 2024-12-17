@@ -140,8 +140,8 @@ static int CalculerTempsTotalOccupé(int nombreRendezVous, int dureeMoyenne)
 
 // Exemple d’utilisation
 int nombreRendezVous = 5; // Exemple : 5 rendez-vous
-int dureeMoyenne = typeConsultation ? 45 : 30; // 45 min pour spécialiste, 30 min pour généraliste
-int tempsTotal = CalculerTempsTotalOccupé(typeConsultation, nombreRendezVous, dureeMoyenne);
+int dureeMoyenne = 30; // 30 min
+int tempsTotal = CalculerTempsTotalOccupé(nombreRendezVous, dureeMoyenne);
 Console.WriteLine($"Temps total occupé pour toutes les consultations : {tempsTotal} minutes.");
 ```
 
