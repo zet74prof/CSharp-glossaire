@@ -58,8 +58,7 @@ Option non valide. Veuillez choisir 1 pour généraliste ou 2 pour spécialiste.
 ---
 
 #### **Exercice 5 : Création de fonctions** (20 points)  
-1. Implémentez une fonction `CalculerTempsTotalOccupé` qui prend en paramètre :  
-   - Le type de consultation (généraliste/spécialiste).  
+1. Implémentez une fonction `CalculerTempsTotalOccupé` qui prend en paramètre :    
    - Le nombre de rendez-vous réservés.  
    - La durée moyenne d'une consultation.  
    - Et retourne le temps total occupé pour tous les rendez-vous.  
