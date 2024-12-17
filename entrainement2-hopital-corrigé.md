@@ -114,7 +114,7 @@ foreach (string patient in patientsFictifs)
 }
 
 // Liste dynamique pour les nouveaux patients
-List<string> listePatients = new List<string>(patientsFictifs);
+List<string> listePatients = new List<string>();
 
 // Ajout d’un nouveau patient après réservation
 Console.WriteLine("\nEntrez le nom du nouveau patient :");
